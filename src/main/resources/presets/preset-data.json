@@ -1,0 +1,204 @@
+{
+  "STUDY": [
+    {
+      "id": 1,
+      "name": "스터디 준비물",
+      "presetItems": [
+        { "id": 1, "content": "노트북", "category": "PREPARATION", "sequence": 1 },
+        { "id": 2, "content": "필기도구", "category": "PREPARATION", "sequence": 2 },
+        { "id": 3, "content": "개인 텀블러", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "시험 준비",
+      "presetItems": [
+        { "id": 4, "content": "시험 범위 노트", "category": "PREPARATION", "sequence": 1 },
+        { "id": 5, "content": "참고서", "category": "PREPARATION", "sequence": 2 },
+        { "id": 6, "content": "계산기", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "스터디 예약 및 일정 확인",
+      "presetItems": [
+        { "id": 7, "content": "스터디룸 예약 확인", "category": "RESERVATION", "sequence": 1 },
+        { "id": 8, "content": "발표 일정 확인", "category": "RESERVATION", "sequence": 2 }
+      ]
+    }
+  ],
+  "HOBBY": [
+    {
+      "id": 4,
+      "name": "카메라 모임 준비물",
+      "presetItems": [
+        { "id": 9, "content": "카메라", "category": "PREPARATION", "sequence": 1 },
+        { "id": 10, "content": "삼각대", "category": "PREPARATION", "sequence": 2 },
+        { "id": 11, "content": "여분의 배터리", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "공예 재료 준비",
+      "presetItems": [
+        { "id": 12, "content": "가위", "category": "PREPARATION", "sequence": 1 },
+        { "id": 13, "content": "풀", "category": "PREPARATION", "sequence": 2 },
+        { "id": 14, "content": "색종이", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "공예 사전 준비",
+      "presetItems": [
+        { "id": 15, "content": "재료 주문 완료", "category": "PRE_WORK", "sequence": 1 },
+        { "id": 16, "content": "작업 공간 정리", "category": "PRE_WORK", "sequence": 2 }
+      ]
+    }
+  ],
+  "SPORTS": [
+    {
+      "id": 7,
+      "name": "등산 준비물",
+      "presetItems": [
+        { "id": 17, "content": "등산화", "category": "PREPARATION", "sequence": 1 },
+        { "id": 18, "content": "등산복", "category": "PREPARATION", "sequence": 2 },
+        { "id": 19, "content": "배낭", "category": "PREPARATION", "sequence": 3 },
+        { "id": 20, "content": "비상약", "category": "PREPARATION", "sequence": 4 }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "스키 준비 및 예약",
+      "presetItems": [
+        { "id": 21, "content": "스키 장비", "category": "PREPARATION", "sequence": 1 },
+        { "id": 22, "content": "스키장 예약 확인", "category": "RESERVATION", "sequence": 2 },
+        { "id": 23, "content": "보호 장비", "category": "PREPARATION", "sequence": 3 },
+        { "id": 24, "content": "방한복", "category": "PREPARATION", "sequence": 4 }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "운동 사전 작업",
+      "presetItems": [
+        { "id": 25, "content": "체력 단련", "category": "PRE_WORK", "sequence": 1 },
+        { "id": 26, "content": "스트레칭", "category": "PRE_WORK", "sequence": 2 }
+      ]
+    }
+  ],
+  "TRAVEL": [
+    {
+      "id": 10,
+      "name": "해외 여행 준비물",
+      "presetItems": [
+        { "id": 27, "content": "여권", "category": "PREPARATION", "sequence": 1 },
+        { "id": 28, "content": "항공권", "category": "RESERVATION", "sequence": 2 },
+        { "id": 29, "content": "환전", "category": "PREPARATION", "sequence": 3 },
+        { "id": 30, "content": "여행자 보험", "category": "RESERVATION", "sequence": 4 }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "국내 여행 준비",
+      "presetItems": [
+        { "id": 31, "content": "운전면허증", "category": "PREPARATION", "sequence": 1 },
+        { "id": 32, "content": "숙소 예약 확인", "category": "RESERVATION", "sequence": 2 },
+        { "id": 33, "content": "간단한 간식", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "여행 전 사전 작업",
+      "presetItems": [
+        { "id": 34, "content": "짐 싸기", "category": "PRE_WORK", "sequence": 1 },
+        { "id": 35, "content": "집 보안 설정", "category": "PRE_WORK", "sequence": 2 }
+      ]
+    }
+  ],
+  "FOOD": [
+    {
+      "id": 13,
+      "name": "바비큐 모임 준비",
+      "presetItems": [
+        { "id": 36, "content": "고기 및 재료 준비", "category": "PREPARATION", "sequence": 1 },
+        { "id": 37, "content": "장소 예약 확인", "category": "RESERVATION", "sequence": 2 },
+        { "id": 38, "content": "불판 및 도구 정리", "category": "PRE_WORK", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "요리 클래스",
+      "presetItems": [
+        { "id": 39, "content": "재료 주문", "category": "PRE_WORK", "sequence": 1 },
+        { "id": 40, "content": "앞치마 준비", "category": "PREPARATION", "sequence": 2 },
+        { "id": 41, "content": "레시피 확인", "category": "PRE_WORK", "sequence": 3 }
+      ]
+    }
+  ],
+  "PARTY": [
+    {
+      "id": 15,
+      "name": "생일 파티 준비",
+      "presetItems": [
+        { "id": 42, "content": "초대장 발송", "category": "PRE_WORK", "sequence": 1 },
+        { "id": 43, "content": "장식 준비", "category": "PREPARATION", "sequence": 2 },
+        { "id": 44, "content": "케이크 예약", "category": "RESERVATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "게임 나이트",
+      "presetItems": [
+        { "id": 45, "content": "게임 선택", "category": "PREPARATION", "sequence": 1 },
+        { "id": 46, "content": "참가자 확정", "category": "PRE_WORK", "sequence": 2 },
+        { "id": 47, "content": "간식 준비", "category": "PREPARATION", "sequence": 3 }
+      ]
+    }
+  ],
+  "WORK": [
+    {
+      "id": 17,
+      "name": "출장 준비물",
+      "presetItems": [
+        { "id": 48, "content": "노트북 충전기", "category": "PREPARATION", "sequence": 1 },
+        { "id": 49, "content": "회의 자료", "category": "PREPARATION", "sequence": 2 },
+        { "id": 50, "content": "명함", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "재택 근무 준비",
+      "presetItems": [
+        { "id": 51, "content": "편안한 의자", "category": "PREPARATION", "sequence": 1 },
+        { "id": 52, "content": "헤드셋", "category": "PREPARATION", "sequence": 2 },
+        { "id": 53, "content": "인터넷 연결", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "업무 예약 확인",
+      "presetItems": [
+        { "id": 54, "content": "회의실 예약 확인", "category": "RESERVATION", "sequence": 1 }
+      ]
+    }
+  ],
+  "CULTURE": [
+    {
+      "id": 20,
+      "name": "전시회 준비",
+      "presetItems": [
+        { "id": 55, "content": "티켓 확인", "category": "RESERVATION", "sequence": 1 },
+        { "id": 56, "content": "전시 정보 조사", "category": "PRE_WORK", "sequence": 2 },
+        { "id": 57, "content": "편안한 신발", "category": "PREPARATION", "sequence": 3 }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "영화 관람 체크리스트",
+      "presetItems": [
+        { "id": 58, "content": "예매 확인", "category": "RESERVATION", "sequence": 1 },
+        { "id": 59, "content": "팝콘/간식 준비", "category": "PREPARATION", "sequence": 2 },
+        { "id": 60, "content": "상영 시간 확인", "category": "PRE_WORK", "sequence": 3 }
+      ]
+    }
+  ]
+}
