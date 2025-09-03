@@ -38,6 +38,8 @@ jobs:
       # AWS ECR 로그인
       - name: Login to Amazon ECR
         uses: aws-actions/amazon-ecr-login@v2
+        with:
+          region: ap-northeast-2
 
       # Docker 태그
       - name: Tag Docker image
