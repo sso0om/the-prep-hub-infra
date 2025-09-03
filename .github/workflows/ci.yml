@@ -92,6 +92,7 @@ jobs:
               --name ${{ env.IMAGE_NAME }} \
               -p 8080:8080 \
               -e SPRING_PROFILES_ACTIVE=prod \
+              -e SPRING_CONFIG_IMPORT="" \
               -e JWT_SECRET_KEY=$JWT_SECRET_KEY \
               -e DB_URL=$DB_URL \
               -e DB_USERNAME=$DB_USER \
