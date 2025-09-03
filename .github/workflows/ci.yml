@@ -65,6 +65,12 @@ jobs:
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            # AWS CLI 설정 (EC2에서 ECR 접근을 위해)
+            aws configure set region ap-northeast-2
+            
+            # ECR 로그인
+            aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin ${{ secrets.ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com
+
             # 기존 컨테이너 중지 및 삭제
             docker stop ${{ env.IMAGE_NAME }} || true
             docker rm ${{ env.IMAGE_NAME }} || true
@@ -79,14 +85,15 @@ jobs:
             export DB_HOST=$(aws ssm get-parameter --name "/kacg-cicd/db/endpoint" --with-decryption --query "Parameter.Value" --output text)
             export DB_PORT=$(aws ssm get-parameter --name "/kacg-cicd/db/port" --with-decryption --query "Parameter.Value" --output text)
             export DB_NAME=$(aws ssm get-parameter --name "/kacg-cicd/db/dbname" --with-decryption --query "Parameter.Value" --output text)
+            export DB_URL="jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}?serverTimezone=Asia/Seoul&useSSL=false"
 
             # 컨테이너 실행
             docker run -d \
               --name ${{ env.IMAGE_NAME }} \
               -p 8080:8080 \
-              -e DB_USER=$DB_USER \
-              -e DB_PASS=$DB_PASS \
-              -e DB_HOST=$DB_HOST \
-              -e DB_PORT=$DB_PORT \
-              -e DB_NAME=$DB_NAME \
+              -e SPRING_PROFILES_ACTIVE=prod \
+              -e JWT_SECRET_KEY=$JWT_SECRET_KEY \
+              -e DB_URL=$DB_URL \
+              -e DB_USERNAME=$DB_USER \
+              -e DB_PASSWORD=$DB_PASS \
               ${{ secrets.ACCOUNT_ID }}.dkr.ecr.ap-northeast-2.amazonaws.com/${{ env.IMAGE_NAME }}:latest
